@@ -146,6 +146,7 @@
     <ClCompile Include="cwiczenia_4.c" />
     <ClCompile Include="cwiczenia_5.c" />
     <ClCompile Include="main.c" />
+    <ClCompile Include="zad_domowe_5.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="cwiczenia_1.h" />
@@ -153,6 +154,7 @@
     <ClInclude Include="cwiczenia_3.h" />
     <ClInclude Include="cwiczenia_4.h" />
     <ClInclude Include="cwiczenia_5.h" />
+    <ClInclude Include="zad_domowe_5.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

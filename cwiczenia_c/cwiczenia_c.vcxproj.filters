@@ -33,6 +33,9 @@
     <ClCompile Include="cwiczenia_5.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="zad_domowe_5.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="cwiczenia_1.h">
@@ -48,6 +51,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="cwiczenia_5.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="zad_domowe_5.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -1,0 +1,3 @@
+﻿  zad_domowe_5.c
+E:\komp\Programy\Programowanie\c\cwiczenia_c\cwiczenia_c\zad_domowe_5.c(17,14): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data
+  cwiczenia_c.vcxproj -> E:\komp\Programy\Programowanie\c\cwiczenia_c\x64\Debug\cwiczenia_c.exe

@@ -15,18 +15,14 @@ int CzyPotegaDwojki(unsigned int a) {
 
 // Zadanie 3
 void PostacBinarna(short a) {
-	char binary[32];
-	int i = 0;
-	while (a > 0)
-	{
-		if ((a & 1) == 1)
-			binary[i] = "1";
+	short int n;
+	for (int i = 31; i >= 0; i--){	
+		n = a >> i;
+		if (n & 1)
+			printf("1");
 		else
-			binary[i] = "0";
-		a >>= 1;
-		i += 1;
+			printf("0");
 	}
-	printf(binary);
 }
 
 // Zadanie 4
@@ -39,25 +35,36 @@ int ZnakLiczby(float a) {
 	return a > 0 ? 1 : a < 0 ? -1 : 0;
 }
 
-// Zadanie 6
-int CzyDoskonala(unsigned long a) {
-	int i = 1;
-	int sum = 0;
-	while (i <= a - 1) {
-		if (a % i == 0) {
-			sum += i;
+int CzyDoskonala(unsigned int a) {
+	// Jest doskonala kiedy jest suma jej dzielnikow (oprocz jej samej)
+	unsigned int s = 0, i = 1;
+	while (i < a) {
+		if (a % i++ == 0) {
+			s += i;
 		}
-		i += 1;
 	}
-	return sum == a ? 1 : 0;
+	return s == a;
 }
+
 
 // Zadanie 7
 int CzyPierwsza(unsigned long a) {
-
+	if (a == 1) {
+		return 0;
+	}
+	for (int i = a - 1; i > 1; i--) {
+		if (a % i == 0) {
+			return 0;
+		}
+	}
+	return 1;
 }
 
 // Zadanie 8
 int PierwszaWiekszaNiz(unsigned long a) {
-
+	int i = a;
+	do {
+		i++;
+	} while (CzyPierwsza(i) == 0);
+	return i;
 }
